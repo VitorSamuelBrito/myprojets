@@ -1,8 +1,14 @@
-body {
+* {
     margin: 0;
-    /*zerar a margem para adaptar so navegares  */
     padding: 0;
-    /*zerar o interior da pagina para adaptar nos navegares  */
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+body {
     background: #ccee66;
     color: white;
     padding: 20px 160px;
