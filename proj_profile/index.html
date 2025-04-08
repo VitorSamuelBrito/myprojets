@@ -5,31 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>MyProfile</title>
 </head>
 
 <body>
     <nav class="navigator">
         <ul class="menu">
-            <li><a href="#init">Início</a></li>
-            <li><a href="#informations">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#education">Educação</a></li>
+            <li><a href="#init" class="link-menu">Início</a></li>
+            <li><a href="#informations" class="link-menu">Sobre</a></li>
+            <li><a href="#projects" class="link-menu">Projetos</a></li>
+            <li><a href="#education" class="link-menu">Educação</a></li>
         </ul>
     </nav>
 
     <main id="init" class="pageone">
-        <div>
-            <img src="images/vitor.png" alt="Foto do perfil" class="photo">
-            <h1>Vitor Brito</h1>
-            <h2>Programador | Desenvolvedor Front-End</h2>
-        </div>
+        <img src="images/vitor.png" alt="Foto do perfil" class="photo">
+        <h1>Vitor Brito</h1>
+        <h2>Programador | Desenvolvedor Front-End</h2>
     </main>
 
-    <section id="informations" class="pagetwo">
+    <section id="informations" class="pages">
         <h3 class="titles">Sobre Mim</h3>
         <div class="box-one">
             <p class="parident-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nesciunt aperiam
@@ -39,29 +34,33 @@
         </div>
     </section>
 
-    <section id="projects" class="pagethree">
+    <section id="projects" class="pages">
         <h3 class="titles">Meus Projetos</h3>
         <div class="box-two">
             <div class="card-projects">
                 <img src="images/image_test.png" alt="Projeto 1" class="img-projects">
-                <h4 class="title-card">Orçamento Pessoal</h4>
-                <p class="parident-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione
-                    veritatis, corporis
-                    ducimus autem esse quidem ipsa illum obcaecati molestiae fuga aperiam tempora. Dignissimos natus
-                    alias suscipit sit atque totam?</p>
+                <div class="box-card">
+                    <h4 class="title-card">Orçamento Pessoal</h4>
+                    <p class="parident-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione
+                        veritatis, corporis
+                        ducimus autem esse quidem ipsa illum obcaecati molestiae fuga aperiam tempora. Dignissimos natus
+                        alias suscipit sit atque totam?</p>
+                </div>
             </div>
             <div class="card-projects">
                 <img src="images/image_test.png" alt="Projeto 2" class="img-projects">
-                <h4 class="title-card">Propaganda de Tênis</h4>
-                <p class="parident-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione
-                    veritatis, corporis
-                    ducimus autem esse quidem ipsa illum obcaecati molestiae fuga aperiam tempora. Dignissimos natus
-                    alias suscipit sit atque totam?</p>
+                <div class="box-card">
+                    <h4 class="title-card">Propaganda de Tênis</h4>
+                    <p class="parident-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione
+                        veritatis, corporis
+                        ducimus autem esse quidem ipsa illum obcaecati molestiae fuga aperiam tempora. Dignissimos natus
+                        alias suscipit sit atque totam?</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="pagefour">
+    <section id="education" class="pages">
         <h3 class="titles">Educação</h3>
         <div>
             <h5 class="title-uni"> Universidade Federal do Triângulo Mineiro</h5>
