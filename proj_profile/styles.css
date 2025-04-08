@@ -12,10 +12,11 @@ html {
 :root {
   --primary: #4f46e5;
   --second: #7c3aed;
+  --third: #998bbf;
   --darksmooth: #0f172a;
   --dark: #0a0f1c;
   --light: #e2e8f0;
-  --transp: rgba(255, 255, 255, 0.1)
+  --transp: rgba(255, 255, 255, 0.1) --texts: #f7ebff;
 }
 
 body {
@@ -81,6 +82,7 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
+  color: var(--third);
   padding: 20px;
 }
 
@@ -95,7 +97,8 @@ h2 {
 
 .titles {
   font-size: 3rem;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  margin-top: 25px;
 }
 
 .box-one {
@@ -111,7 +114,21 @@ h2 {
 .parident-info {
   text-align: center;
   font-size: 1.5rem;
+  color: rgba(226, 232, 240, 0.8);
 }
+
+/* .hub{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 25px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+} */
 
 .box-two {
   display: grid;
@@ -121,17 +138,17 @@ h2 {
   margin: 0 auto;
 }
 
-.card-projects{
+.card-projects {
   border: 1px solid var(--transp);
   border-radius: 10px;
   backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.05); 
+  background: rgba(255, 255, 255, 0.05);
   overflow: hidden;
   transition: all 0.5s ease;
   cursor: pointer;
 }
 
-.card-projects:hover{
+.card-projects:hover {
   box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
   transform: translateY(-10px) scale(1.03);
 }
@@ -142,15 +159,66 @@ h2 {
   object-fit: cover;
 }
 
-.box-card{
+.box-card {
   padding: 1.5rem;
 }
 
-.title-card{
+.title-card {
+  font-size: 1.5rem;
   margin-bottom: 5px;
 }
 
-.parident-card{
+.parident-card {
   color: rgba(226, 232, 240, 0.8);
   line-height: 1.25rem;
+}
+
+.UNI {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid var(--transp);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 25px;
+}
+
+.title-uni {
+  font-size: 2rem;
+  color: var(--light);
+}
+
+.link-uni {
+  text-decoration: none;
+  color: var(--light);
+  position: relative;
+  margin-bottom: 5px;
+}
+
+/* .link-uni::after {
+  content: '';
+  height: 2.5px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--second);
+  transition: width 0.3s ease;
+}
+
+.link-uni:hover::after {
+  width: 100%;
+} */
+
+.parident-course {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: rgba(226, 232, 240, 0.8);
+}
+
+.parident-situation {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgba(226, 232, 240, 0.8);
 }
