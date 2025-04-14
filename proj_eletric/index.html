@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Site Lucas</title>
 </head>
 
 <body>
     <div class="navigator">
+        <h1>ELETROMIGÃOS</h1>
         <ul class="menu">
             <li class="activeLi">
                 <a href="#init" class="link-menu">
@@ -20,13 +26,13 @@
             </li>
             <li>
                 <a href="#profile" class="link-menu">
-                    <i class='bx bx-user'></i> 
+                    <i class='bx bx-user'></i>
                     <i class='bx bxs-user activeIcon'></i>
                 </a>
             </li>
             <li>
                 <a href="#projects" class="link-menu">
-                    <i class='bx bx-hard-hat'></i> 
+                    <i class='bx bx-hard-hat'></i>
                     <i class='bx bxs-hard-hat activeIcon'></i>
                 </a>
             </li>
@@ -36,23 +42,56 @@
                     <i class='bx bxs-mobile-vibration activeIcon'></i>
                 </a>
             </li>
+            <div class="indicator"></div>
         </ul>
+        <button>Solicitar Orçamento</button>
     </div>
 
-    <div class="indicator"></div>
+    <main id="init" class="pageone">
+        <div class="box-main">
+            <h2 class="title-init">Serviços Fotovoltaicos Profissionais</h2>
+            <p class="parident-init">Instalações, manutenções e emergênciais</p>
+        </div>
+        <img src="img/init_img.png" alt="img-pageone">
+    </main>
 
-    <main id="init" class="page-one">
-        <div class="box-one">
+    <section id="profile" class="pagetwo">
+        <h2 class="title-profile">Sobre Nós</h2>
+        <div class="box-info">
+            <p class="parident-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, qui. Et ipsam
+                non enim illo cupiditate
+                temporibus obcaecati, fugit dolor ratione maiores saepe. Odit ex omnis eaque temporibus repudiandae
+                labore.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="pagethree">
+        <h2 class="title-projects">Nossos Serviços</h2>
+        <p class="parident-projects">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="box-card">
             <div class="card">
-                <img src="img/img_test.jpg" class="img-one">
+                <i class="fa-solid fa-bolt"></i>
+                <h3 class="title-card">Instalações</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
             </div>
             <div class="card">
-                <p class="parident-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis
-                    omnis laboriosam natus totam sed repellat dignissimos nihil quo, vitae iste laudantium fugit
-                    voluptatibus eius ea. Totam nam unde sapiente.</p>
+                <i class="fa-solid fa-tools"></i>
+                <h3 class="title-card">Manutenções</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-brush"></i>
+                <h3 class="title-card">Limpezas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-plug-circle-bolt"></i>
+                <h3 class="title-card">Emergências</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
             </div>
         </div>
-    </main>
+    </section>
 </body>
+<script src="./scripts.js"></script>
 
 </html>
